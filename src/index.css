@@ -1,0 +1,48 @@
+* {
+    padding: 2%;
+  }
+  
+  .star {
+    font-size: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.2s; 
+  }
+  
+  .star:hover {
+    transform: rotate(15deg);
+  }
+  
+  .text-warning {
+    color: gold !important;
+  }
+  
+  .text-secondary {
+    color: white !important;
+  }
+  
+  .h {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(240, 13, 13, 1) 100%);
+  }
+  
+  .rt {
+    color: white;
+  }
+  
+ 
+  @keyframes clickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .star.clicked {
+    animation: clickAnimation 0.3s ease-out; 
+  }
+  
